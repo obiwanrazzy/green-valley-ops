@@ -36,15 +36,17 @@
                 padding: 6px 0;
             }
         iframe {
-                flex: 1 1 300px;
-                max-width: 600px;
+                width: 100%;
+                max-width: 100%;
                 height: 450px;
                 border: none;
                 }
                 .embedded-image {
-                    flex: 1 1 300px;
-                    max-width: 600px;
+                    flex: 1 1 140px;         /* Shrinks each to fit 4 across */
+                    max-width: 24%;          /* Allows 4 images to fit neatly */
                     height: auto;
+                    object-fit: cover;
+                    margin: 2px;
                 }
     </style>
 </head>
@@ -62,6 +64,9 @@
 
 <div class="map-image-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.0780434059657!2d-122.01837666830727!3d48.09439021842089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54854d1161475b49%3A0xfcad3d139386a4a1!2s10940%20163rd%20Ave%20NE%2C%20Granite%20Falls%2C%20WA%2098252!5e1!3m2!1sen!2sus!4v1744000254069!5m2!1sen!2sus" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <img src="GVRd1.jpg" alt="Entry" class="embedded-image">
+    <img src="GVRd2.jpg" alt="Mid-field access road" class="embedded-image">
+    <img src="GVRVSite.jpg" alt="RV site" class="embedded-image">
     <img src="AccessRd_RunwayXing.jpg" alt="Access Road Crossing" class="embedded-image">
 </div>
 
